@@ -83,3 +83,16 @@ function reset() {
     document.getElementById("startStop").innerHTML = "start"
 
 }
+
+
+
+// function to save the time data
+function save() {
+
+    let date= new Date;
+    let poopTime = document.getElementById("display");
+    localStorage.setItem(date, poopTime);
+    alert("Saved!")
+
+}
+
